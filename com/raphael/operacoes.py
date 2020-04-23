@@ -3,9 +3,9 @@ class Operacoes():
         val = 0
         for v in valores:
             val = val + v
-            return val
+        return val
     def subtracao(self, valores):
         val = 0
         for v in valores:
             val = val - v
-            return val
+        return val
