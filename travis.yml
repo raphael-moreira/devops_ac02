@@ -1,8 +1,10 @@
 language: python
 python:
-  - 3.7
+  - 3.6
 before_install:
   - python --version
   - pip install -U pip
 script:
+  - coverage run --source=com/raphael/ -m unittest discover,coverage report -m
   - python -m unittest discover
+  
